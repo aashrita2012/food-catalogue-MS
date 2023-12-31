@@ -13,16 +13,16 @@ pipeline {
 
   stages {
 
-    stage('Maven Build'){
+      stage('Maven Build'){
         steps{
         sh 'mvn clean package  -DskipTests'
         }
-    }
-
-     stage('Run Tests') {
-      steps {
-        sh 'mvn test'
       }
+
+       stage('Run Tests') {
+          steps {
+          sh 'mvn test'
+        }
     }
 
     stage('SonarQube Analysis') {
