@@ -6,7 +6,6 @@ pipeline {
     VERSION = "${env.BUILD_ID}"
     JENKINS_SERVER = "54.174.179.191"
   }
-
   tools {
     maven "Maven"
   }
